@@ -15,7 +15,11 @@ class AdminFactory extends Factory {
      */
     public function definition(): array {
         return [
-            //
+            'user_id' => \App\Models\User::factory(),
+            'name' => $this->faker->name,
+            'phone_number' => $this->faker->phoneNumber,
+            'created_at' => now(),
+            'updated_at' => now(),
         ];
     }
 }

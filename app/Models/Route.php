@@ -5,8 +5,8 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class VehicleDocuments extends Model
+class Route extends Model
 {
-    /** @use HasFactory<\Database\Factories\VehicleDocumentsFactory> */
+    /** @use HasFactory<\Database\Factories\RoutesFactory> */
     use HasFactory;
 }

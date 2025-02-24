@@ -18,8 +18,8 @@ return new class extends Migration {
             $table->string('status')->default('pending');
             $table->dateTime('estimated_departure_time');
             $table->dateTime('estimated_arrival_time');
-            $table->dateTime('departure_time');
-            $table->dateTime('arrival_time');
+            $table->dateTime('departure_time')->nullable();
+            $table->dateTime('arrival_time')->nullable();
             $table->timestamps();
         });
     }

@@ -1,0 +1,20 @@
+meta {
+  name: Create
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{base_url}}/api/vehicles
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "name": "Truck New",
+    "plate_number": "BH 8393 FF",
+    "status": "available",
+    "date": "2023-01-01"
+  }
+}

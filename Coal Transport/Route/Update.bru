@@ -1,0 +1,19 @@
+meta {
+  name: Update
+  type: http
+  seq: 4
+}
+
+put {
+  url: {{base_url}}/api/routes/22
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "name": "Route New Updated",
+    "start_point": "Mine 2",
+    "end_point": "Harbor 1"
+  }
+}

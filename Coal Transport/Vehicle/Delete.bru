@@ -1,0 +1,20 @@
+meta {
+  name: Delete
+  type: http
+  seq: 5
+}
+
+delete {
+  url: {{base_url}}/api/vehicles/2000
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "name": "Truck New",
+    "plate_number": "BH 8393 FFs",
+    "status": "available",
+    "date": "2023-01-01"
+  }
+}
